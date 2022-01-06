@@ -2,6 +2,8 @@
     <header>
         <Header />
 
+        <CadastrosServicos />
+
         <NovaMedicao v-if="newMed" />
 
         <b-jumbotron v-else>
@@ -30,11 +32,12 @@
 <script>
 import Header from '../tamplete/Header.vue'
 import NovaMedicao from './NovaMedicao.vue'
+import CadastrosServicos from './CadastrosServicos.vue'
 import Footer from '../tamplete/Footer.vue'
 
 export default {
     name: 'Home',
-    components: { Header, Footer, NovaMedicao },
+    components: { Header, Footer, NovaMedicao, CadastrosServicos },
     data() {
         return {
             newMed: false
